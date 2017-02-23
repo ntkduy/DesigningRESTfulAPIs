@@ -11,4 +11,4 @@ def getGeocodeLocation(inputString):
 	result = json.loads(content)
 	latitude 	= result['results'][0]['geometry']['location']['lat']
 	longitude 	= result['results'][0]['geometry']['location']['lng']
-	return result
+	return (latitude, longitude)
